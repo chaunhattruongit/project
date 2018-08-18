@@ -1,10 +1,45 @@
 header
-	.navbar
-		+pad(null 0)
-	.navbar-brand
-		img 
-			max-height: 1rem
-	+media-breakpoint-up(md)
-		.navbar-brand
-			img 
-				max-height: 2rem
+	width: 100%
+	min-height: 50px
+	background: #d74680
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	img
+		margin-left: 10px
+		line-height: 50px
+		margin: 5px 0
+		max-width: 100%
+	ul
+		li
+			display: block
+			margin-right: 20px
+			text-align: center
+			a
+				color: white
+				font-size: 16px
+				line-height: 50px
+			&:hover,
+			&:active
+				a
+					transition: .5s all ease-in-out
+					text-decoration: none
+					background: darken(#d74680,20%)
+					color: white
+					padding: 3px 6px
+					border-radius: 5px
+	+media-breakpoint-up(sm)
+		img
+			float: left
+			text-align: center
+			margin-left: 10px
+			line-height: 50px
+			margin: 5px 0
+			max-width: 120px
+			padding: 0px
+		ul
+			li
+				float: right
+				text-align: center
+

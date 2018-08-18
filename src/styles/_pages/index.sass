@@ -1,2 +1,275 @@
 body
 	font-family: Roboto
+.home-slider
+	min-height: 368px
+	background: #8e44ad
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	.btn-more
+		line-height: 50px
+		border: none
+		background: #d74680
+		color: white
+		font-size: 16px
+		padding: 5px 30px
+		text-decoration: none
+		box-shadow: 0 2px 5px lightgray
+		&:hover
+			background: white
+			color: black
+			font-weight: bold
+.home-service
+	min-height: 480px
+	background: white
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	padding: 2rem 0
+	h2
+		position: relative
+		padding-bottom: 10px
+		&:before
+			content: ''
+			display: block
+			background: black
+			width: 60px
+			height: 3px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -12px
+			margin-bottom: 10px
+	ul
+		li
+			a
+				display: block
+				height: 2rem
+				width: 2rem
+				line-height: 2rem
+				border-radius: 50%
+				background: #fff
+				transition: .5s all ease-in-out
+			&:hover,
+			&:active
+				a
+					background: #000
+	+media-breakpoint-up(sm)
+		background: yellow
+		color: red
+		ul
+			li
+				a
+					background: red
+					color: yellow
+	+media-breakpoint-up(md)
+		background: lightblue
+		color: black
+		ul
+			li
+				a
+					background: black
+					color: white
+	+media-breakpoint-up(lg)
+		background: cyan
+		color: black
+	+media-breakpoint-up(xl)
+		background: orangered
+		color: white
+.home-team
+	background: lightblue
+	min-height: 500px
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	padding: 50px 0
+	img
+		border-radius: 50%
+	h2
+		position: relative
+		padding-bottom: 10px
+		&:before
+			content: ''
+			display: block
+			background: black
+			width: 60px
+			height: 3px
+			position: absolute
+			left: 50%
+			bottom: -12px
+			transform: translateX(-50%)
+			margin-bottom: 10px
+	h3
+		margin-top: 10px
+	p
+		a
+			color: orangered
+	ul
+		margin-bottom: 20px
+		li
+			a
+				display: block
+				width: 2rem
+				height: 2rem
+				min-height: 2rem
+				background: black
+				color: white
+				border-radius: 50%
+				transition: .5s all ease-in-out
+			&:hover,
+			&:active
+				a
+					background: red
+					color: yellow
+.home-skill
+	min-height: 368px
+	background: white
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	padding: 50px 0
+	h2
+		position: relative
+		padding-bottom: 10px
+		&:before
+			content: ''
+			display: block
+			background: black
+			width: 60px
+			height: 3px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -12px
+			margin-bottom: 10px
+	h3
+		margin-top: 25px
+.home-portfolio
+	min-height: 368px
+	background: lightblue
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	padding: 50px 0
+	h2
+		position: relative
+		padding-bottom: 10px
+		&:before
+			content: ''
+			display: block
+			background: black
+			width: 60px
+			height: 3px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -12px
+			margin-bottom: 10px
+	span
+		margin-right: 5px
+		margin-top: 5px
+		.btn-more
+			width: 60px
+			line-height: 30px
+			border: none
+			background: #d74680
+			color: white
+			padding: 5px 10px
+			text-decoration: none
+			box-shadow: 0 2px 5px lightgray
+			&:hover
+				background: white
+				color: black
+				font-weight: bold
+	p
+		margin-top: 20px
+		.btn-more
+			line-height: 30px
+			border: none
+			background: blue
+			color: white
+			padding: 5px 30px
+			text-decoration: none
+			box-shadow: 0 2px 5px lightgray
+			&:hover
+				background: white
+				color: black
+				font-weight: bold
+.home-about-us
+	min-height: 368px
+	background: #24deac
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	padding: 50px 0
+	h2
+		position: relative
+		padding-bottom: 10px
+		color: black
+		&:before
+			content: ''
+			display: block
+			background: black
+			width: 60px
+			height: 3px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -12px
+			margin-bottom: 10px
+	p
+		color: black
+	img
+		border-radius: 50%
+	+media-breakpoint-up(sm)
+		p.text
+			text-align: center
+		h5.text
+			text-align: center
+	+media-breakpoint-up(md)
+		p.text
+			text-align: left
+		h5.text
+			text-align: left
+.home-form
+	background: #2196f3
+	min-height: 400px
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	.home-form_width
+		+media-breakpoint-up(sm)
+			max-width: 60%
+	h2
+		position: relative
+		&:before
+			content: ''
+			display: block
+			background: black
+			width: 60px
+			height: 3px
+			position: absolute
+			left: 50%
+			bottom: -12px
+			transform: translateX(-50%)
+			margin-bottom: 10px
+	input,
+	textarea
+		background: darken(#2196f3,30%)
+		border-color: darken(#2196f3,30%)
+		&::-webkit-input-placeholder,
+		&::-moz-placeholder,
+		&:-ms-input-placeholder,
+		&:-moz-placeholder
+			color: rgba(255,255,255,.5)
+		&:focus,
+		&:active
+			background: darken(#2196f3,40%)
+			border-color: darken(#2196f3,40%)
